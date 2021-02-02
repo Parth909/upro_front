@@ -47,9 +47,6 @@ const Navbar = ({ setSidebarVisible }) => {
           className="menu-items"
         />
         <Menu.Menu position="right">
-          <Menu.Item>
-            <Input icon="search" placeholder="Search..." />
-          </Menu.Item>
           <Menu.Item
             name="logout"
             active={activeItem === "logout"}

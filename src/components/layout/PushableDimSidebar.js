@@ -93,6 +93,14 @@ const PushableDimSidebar = ({ sidebarVisible, setSidebarVisible }) => {
             <Header as="h3">Application Content</Header>
             <Image src="https://react.semantic-ui.com/images/wireframe/paragraph.png" />
           </Segment>
+          <Segment basic>
+            <Header as="h3">Application Content</Header>
+            <Image src="https://react.semantic-ui.com/images/wireframe/paragraph.png" />
+          </Segment>
+          <Segment basic>
+            <Header as="h3">Application Content</Header>
+            <Image src="https://react.semantic-ui.com/images/wireframe/paragraph.png" />
+          </Segment>
         </Sidebar.Pusher>
       </Grid.Column>
     </Grid>

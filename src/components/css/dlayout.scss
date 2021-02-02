@@ -13,6 +13,10 @@
 }
 #Navbar {
   height: $navHeight !important;
+  width: 100vw !important;
+  @media (max-width: 700px) {
+    justify-content: space-between !important;
+  }
 }
 .Navbar {
   background-color: $navbarColor !important;
@@ -46,6 +50,9 @@
     font-size: 15px !important;
     text-align: left;
   }
+  .sidebar-menu-item:hover {
+    background-color: $navbarHoverColor !important;
+  }
   .sidebar-menu-item .sidebar-menu-name {
     text-align: left;
     vertical-align: middle;
@@ -59,7 +66,7 @@
     padding-left: 2rem;
     &:hover {
       cursor: default;
-      background-color: $navbarColor;
+      background-color: $navbarColor !important;
     }
   }
 }
