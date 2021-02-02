@@ -1,0 +1,86 @@
+@import "dvariables";
+@import "mixins";
+
+.App {
+  background-color: $bodyColor;
+}
+
+// Navbar
+.sticky-navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+#Navbar {
+  height: $navHeight !important;
+}
+.Navbar {
+  background-color: $navbarColor !important;
+  top: 0px;
+  .item {
+    color: $navItemsFontColor !important;
+    font-size: $navItemsFontSize;
+  }
+  .menu-items.no-back-change:hover {
+    background-color: $navbarColor !important;
+    cursor: pointer;
+  }
+  .active,
+  .menu-items:hover {
+    background-color: $navbarHoverColor !important;
+  }
+}
+
+// Sidebar
+// #sidebar {
+//   background-color: $navbarColor;
+// }
+#pushable-dim-sidebar {
+  height: 100vh !important;
+  width: $sidebarWidth; // this will be fixed
+  // the top space to be left for the Navbar
+  margin-top: $navHeight !important;
+  background-color: $navbarColor;
+
+  .sidebar-menu-item {
+    font-size: 15px !important;
+    text-align: left;
+  }
+  .sidebar-menu-item .sidebar-menu-name {
+    text-align: left;
+    vertical-align: middle;
+    color: $whiteColor !important;
+  }
+  .sidebar-menu-item .sidebar-menu-name span {
+    vertical-align: middle;
+    font-weight: 400;
+  }
+  .collections {
+    padding-left: 2rem;
+    &:hover {
+      cursor: default;
+      background-color: $navbarColor;
+    }
+  }
+}
+
+// utils
+hr.custom-sidebar-seperator {
+  @include customBorder(#424242, 1px);
+}
+
+// profile-pic
+.image-cropper {
+  width: 6vh;
+  height: 6vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}

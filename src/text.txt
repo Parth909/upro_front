@@ -1,0 +1,40 @@
+// ----- index.css
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// ---- PushableDimSidebar
+<Sidebar
+              as={Menu}
+              animation="overlay"
+              icon="labeled"
+              inverted
+              onHide={() => setSidebarVisible(false)}
+              vertical
+              visible={sidebarVisible}
+              width="thin"
+              id="pushable-dim-sidebar" **
+            >
+
+<Menu.Item as="a" className="sidebar-menu-item">
+              <Icon name="home" />
+              Home
+            </Menu.Item>
+
+
+            style={{
+              verticalAlign: "middle",
+              fontWeight: "500",
+              letterSpacing: "0.07em",
+            }}

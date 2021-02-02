@@ -1,0 +1,7 @@
+// mixins - Create a set of style and use it throughout by importing the mixin
+
+@mixin customBorder($color, $heightpx) {
+  background-color: $color !important;
+  border: "0px" !important;
+  height: $heightpx !important;
+}

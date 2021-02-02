@@ -1,0 +1,48 @@
+@import "variables";
+
+.App {
+  background-color: $bodyColor;
+}
+
+// Navbar
+.sticky-navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+.Navbar {
+  background-color: $navbarColor !important;
+  top: 0px;
+  .item {
+    color: $navItemsFontColor !important;
+    font-size: $navItemsFontSize;
+  }
+  .active,
+  .menu-items:hover {
+    background-color: $navbarHoverColor !important;
+  }
+}
+
+// Sidebar
+// #sidebar {
+//   background-color: $navbarColor;
+// }
+#pushable-dim-sidebar {
+  height: 100vh !important;
+  width: $sidebarWidth; // this will be fixed
+  // position: sticky;
+  margin-top: 50px !important;
+  background-color: $navbarColor;
+
+  .sidebar-menu-item {
+    font-size: 15px !important;
+    text-align: left;
+  }
+
+  .collections {
+    &:hover {
+      cursor: default;
+      background-color: $navbarColor;
+    }
+  }
+}
